@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Checkout</title>
 </head>
 <body>
@@ -15,14 +16,16 @@
         <div id="contact-info">
             <h3>Contact information</h3>
 
-            <div id="email">
+            <div id="div-email">
                 <label for="email">Email</label><br>
                 <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+                <i class='fas fa-envelope'></i>
             </div>
 
-            <div id="phone">
+            <div id="div-phone">
                 <label for="phone">Phone</label><br>
                 <input type="number" name="phone" id="phone" placeholder="Enter your phone..." required>
+                <i class="fas fa-phone-alt"></i>
             </div>
         </div>  
         
@@ -31,17 +34,20 @@
 
             <div id="name">
                 <label for="name">Full name</label><br>
-                <input type="text" name="name" id="name" placeholder="Enter your Full name..."><br>
+                <input type="text" name="name" id="name" placeholder="Enter your Full name...">
+                <i class="fas fa-user"></i><br>
             </div>
 
             <div id="address">
                 <label for="address">Address</label><br>
-                <input type="text" name="address" id="adress" placeholder="Enter your address..."><br>
+                <input type="text" name="address" id="adress" placeholder="Enter your address...">
+                <i class="fas fa-home"></i><br>
             </div>
 
             <div id="city">
                 <label for="city">City</label><br>
-                <input type="text" name="city" id="city" placeholder="Enter your city..." ><br>
+                <input type="text" name="city" id="city" placeholder="Enter your city..." >
+                <i class="fas fa-city"></i><br>
             </div>
 
             <div id="country">
@@ -52,13 +58,14 @@
                     <option value="usa">USA</option>
                     <option value="canada">Canada</option>
                     <option value="uk">UK</option>
-                </select><br>
+                </select>
+                <i class="fas fa-globe-europe"></i><br>
             </div>
 
             <div id="post-code">  
                 <label for="post-code">Post Code</label><br>           
                 <input type="number" name="post-code" id="post-code" placeholder="Enter your postal code...">
-                
+                <i class="fas fa-mail-bulk"></i>
             </div>
 
             <div id="check-box">                  
@@ -68,13 +75,58 @@
 
             <div id="btn-continue">
                 <input type="submit" value="Continue">
-            </div>           
+            </div> 
+        </div>
+    </form>
 
 
+        <div id="product-painel">
+            <div class="product">
+                <img src="./images/photo1.png" alt="">
+                <div class="product-info">
+                    <h2>Vintage Backbag</h2>
+                    <p><strong>$54.99</strong> <span class="line-through">$94.99</span></p>
+
+                    <div class="quantity-controller">
+                        <button>
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <p>1</p>
+                        <button>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./images/photo2.png" alt="">
+                <div class="product-info">
+                    <h2>Levi Shoes</h2>
+                    <p><strong>$74.99</strong> <span class="line-through">$124.99</span></p>
+
+                    <div class="quantity-controller">
+                        <button>
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <p>1</p>
+                        <button>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buy-detail" id="shipping">
+                <p>Shipping</p>
+                <p>$19</p>
+            </div>
+            <div class="buy-detail" id="total">
+                <p>Total</p>
+                <p>$148.98</p>
+            </div>
         </div>
 
-
-    </form>
     
 </body>
 </html>
